@@ -1,0 +1,113 @@
+/*  Default generic tag styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    background-color: #F0F8FF;
+}
+
+h1,h2,h3 {
+    cursor:default;
+}
+
+h1 {
+    padding: 5px;
+}
+
+/* Navigation bar styles */
+.navbar-wrapper {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: cadetblue;
+}
+.navbar-container {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.navbar-item {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar-item-selected {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.navbar-button:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}
+
+/*  Common content wrappers */
+.body-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-wrapper {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+
+/* Home page styles */
+.home-main-wrapper {
+    height: 90%;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.home-main-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.home-project-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.home-project-card {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+.home-profile-image{
+    width: 19rem;
+    height: 19rem;
+    border-radius: 50%;
+    border: 10px solid cadetblue;
+}
+
