@@ -1,18 +1,26 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/src/fonts/Inter.ttf");
+    /* font-weight: normal;
+    font-size: normal; */
+}
+
 /*  Default generic tag styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter";
 }
 
 html, body {
     height: 100vh;
-    background-color: #F0F8FF;
+    background: linear-gradient(45deg, aliceblue, #d6eaff); 
 }
 
-h1,h2,h3 {
+h1,h2 {
     cursor:default;
+    color: #448ace;
 }
 
 h1 {
@@ -27,33 +35,40 @@ h1 {
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 .navbar-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     list-style: none;
 }
-.navbar-item {
+.navbar-list-item {
+    width: 100px;
     text-align: center;
-    color: white;
+}
+.navbar-item {
+    min-width: 105px;
+    text-align: center;
+    color: #448ace;
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
 }
 .navbar-item-selected {
     text-align: center;
-    color: white;
+    color: #448ace;
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
 }
-.navbar-button:hover {
+.navbar-item:hover {
     text-decoration: underline;
     text-underline-offset: 8px;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
 }
 
 /*  Common content wrappers */
@@ -63,7 +78,7 @@ h1 {
     flex-direction: column;
 }
 .header-wrapper {
-    height: 64px;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,35 +94,98 @@ h1 {
     align-items: center;
     justify-content: space-evenly;
 }
-.home-main-right-wrapper {
+.home-main-center-container {
+    width: 330px;
+}
+.home-profile-image{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    /* border: 10px solid cadetblue; */
+}
+.home-main-left-container {
+    width: 320px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.home-project-container {
+.home-skills-container {
+    /* height: 464px; */
+}
+.home-main-right-container {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.home-projects-container {
+    /* height: 464px; */
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 1.5rem;
 }
-.home-project-card {
-    width: 300px;
-    height: 200px;
+.home-project-card-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: cadetblue;
-    color: white;
+    flex-direction: column;
+    text-align: left;
+    width: 320px;
+    height: 220px;  
+    border-radius: 8px;
+    background-color: rgb(243 244 246);
+    border: 1px solid rgba(169, 192, 211, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    color: #333333 ;
+}
+.home-project-card-container:hover {
+    transform: translateY(-10px);
+}
+.home-project-card-contents {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.home-project-card-title {
     cursor: pointer;
     text-decoration: none;
-    font-weight: 700;
 }
-.home-profile-image{
-    width: 19rem;
-    height: 19rem;
-    border-radius: 50%;
-    border: 10px solid cadetblue;
+.home-project-card-subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    pointer-events: none;
+}
+.home-project-card-description {   
+    pointer-events: none;
+}
+.home-project-card-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.home-project-card-button-readmore {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #448ace;
+    border: 1px solid #448ace;
+    color: aliceblue;
+    border-radius: 999px;
+    transition: transform 0.3s ease-in-out;
+}
+.home-project-card-button-readmore:hover {
+    transform: scale(1.05);
+}
+.home-project-card-button-github {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 999px;
+    transition: transform 0.3s ease-in-out;
+}
+.home-project-card-button-github:hover {
+    transform: scale(1.05);
 }
 
