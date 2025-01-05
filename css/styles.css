@@ -1,6 +1,7 @@
 :root {
     --primary-color:#0A66C2;
     --primary-text-color: #333333;
+    --base-white: #ffffff;
 }
 
 @font-face {
@@ -20,7 +21,6 @@
 
 html,
 body {
-    height: 100vh;
     /* background: linear-gradient(45deg, #f9fafb, #d6eaff);  */
     /* background-color: #f0f0f0; */
 }
@@ -44,7 +44,7 @@ h5 {
 
 /* Navigation bar styles */
 .navbar-wrapper {
-    width: 100%;
+    /* width: 100%; */
     height: 4rem;
     display: flex;
     justify-content: center;
@@ -93,13 +93,11 @@ h5 {
 
 /*  Common content wrappers */
 .body-wrapper {
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .header-wrapper {
-    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +107,6 @@ h5 {
 
 /* Home page styles */
 .home-main-wrapper {
-    height: 90%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -118,6 +115,12 @@ h5 {
 
 /* Home Center Container */
 .home-main-center-container {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-main-center-contents {
     width: 330px;
 }
 
@@ -209,6 +212,7 @@ h5 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
+    list-style: none;
 }
 
 .home-about-skills-icon {
@@ -239,10 +243,6 @@ h5 {
     bottom: -5px;
 }
 
-.home-about-skills-icon:hover .icon-text {
-    opacity: 1;
-    bottom: 0;
-}
 
 /* Home Right Container */
 .home-main-right-container {
@@ -299,6 +299,7 @@ h5 {
     align-items: center;
     gap: .5rem;
     pointer-events: none;
+    list-style: none;
 }
 
 .home-project-card-description {
@@ -351,4 +352,57 @@ h5 {
 
 .home-project-card-button-github:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 720px) {
+    .header-wrapper {
+        background-color: #0A66C2;
+    }
+
+    .navbar-item,
+    .navbar-item-selected {
+        color: var(--base-white);
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Responsive layout for smaller screens */
+    .home-main-wrapper {
+        flex-direction: column; 
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* Center section first */
+    .home-main-center-container {
+        order: 1;
+        /* width: 100%;  */
+    }
+
+    /* Left section second */
+    .home-main-left-container {
+        order: 2;
+        /* width: 100%;  */
+    }
+
+    /* Right section third */
+    .home-main-right-container {
+        order: 3;
+        /* width: 100%;  */
+    }
+
+    .home-profile-image {
+        width: 12rem; 
+        height: 12rem;
+    }
+
+    .icon-text {
+        opacity: 1;
+        bottom: 0;
+    }
+
+    #last-element {
+        padding-bottom: 7rem;
+    }
 }
