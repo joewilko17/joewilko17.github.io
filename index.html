@@ -13,16 +13,73 @@
         <header class="header-wrapper">
             <nav class="navbar-wrapper">
                 <ul class="navbar-container">
-                    <li class="navbar-list-item"><a class="navbar-item-selected">About</a></li>
-                    <li class="navbar-list-item"><a class="navbar-item">Projects</a></li>
-                    <li class="navbar-list-item"><a class="navbar-item">Contacts</a></li>
+                    <li class="navbar-list-item"><a href="/index.html" class="navbar-item-selected">About</a></li>
+                    <li class="navbar-list-item"><a href="/projects.html" class="navbar-item">Projects</a></li>
+                    <li class="navbar-list-item"><a href="/contacts.html" class="navbar-item">Contacts</a></li>
                 </ul>
             </nav>
         </header>
         <main class="home-main-wrapper">
             <div class="home-main-left-container">
                 <h1>About me</h1>
-                <div class="home-skills-container">
+                <div class="home-about-container">
+                    <div class="home-about-contents">
+                        <h3>I'm a Software Engineer passionate about developing full-stack applications. </h3>
+                        <p> I'm currently working on developing a website solution for a client.</p>
+                        <p> In my spare-time, I am focusing on learning the Spring framework for Java, looking to build
+                            an e-commerce website.</p>
+                        <h3>My Current Skillset</h3>
+                        <ul class="home-about-skills-list">
+                            <div class="home-about-skills-icon">
+                                <svg width="3em" height="3em">
+                                    <use xlink:href="assets/icons/java.svg#icon"></use>
+                                </svg>
+                                <span class="icon-text">Java</span>
+                            </div>
+                            <div class="home-about-skills-icon">
+                                <svg width="3em" height="3em">
+                                    <use xlink:href="assets/icons/python.svg#icon"></use>
+                                </svg>
+                                <span class="icon-text">Python</span>
+                            </div>
+                            <div class="home-about-skills-icon">
+                                <svg width="3em" height="3em">
+                                    <use xlink:href="assets/icons/csharp.svg#icon"></use>
+                                </svg>
+                                <span class="icon-text">C#</span>
+                            </div>
+                            <div class="home-about-skills-icon">
+                                <svg width="3em" height="3em">
+                                    <use xlink:href="assets/icons/react.svg#icon"></use>
+                                </svg>
+                                <span class="icon-text">React</span>
+                            </div>
+                            <div class="home-about-skills-icon">
+                                <svg width="3em" height="3em">
+                                    <use xlink:href="assets/icons/html5.svg#icon"></use>
+                                </svg>
+                                <span class="icon-text">HTML</span>
+                            </div>
+                            <div class="home-about-skills-icon">
+                                <svg width="3em" height="3em">
+                                    <use xlink:href="assets/icons/css3.svg#icon"></use>
+                                </svg>
+                                <span class="icon-text">CSS</span>
+                            </div>
+                            <div class="home-about-skills-icon">
+                                <svg width="3em" height="3em">
+                                    <use xlink:href="assets/icons/mysql.svg#icon"></use>
+                                </svg>
+                                <span class="icon-text">mySQL</span>
+                            </div>
+                            <div class="home-about-skills-icon">
+                                <svg width="3em" height="3em">
+                                    <use xlink:href="assets/icons/github.svg#icon"></use>
+                                </svg>
+                                <span class="icon-text">Github</span>
+                            </div>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -30,6 +87,16 @@
                 <img src="/assets/images/profile-image.jpg" class="home-profile-image">
                 <h1>Joe Wilkinson</h1>
                 <h2>Graduate Software Engineer</h2>
+                <div class="home-main-center-button-container">
+                    <a href="https://github.com/joewilko17" class="home-main-center-button-github button">
+                        <svg width="1.5em" height="1.5em">
+                            <use xlink:href="assets/icons/github.svg#icon"></use>
+                        </svg>Github</a>
+                    <a href="https://www.linkedin.com/in/joe-wilkinson-9a587930b" class="home-main-center-button-linkedin button">
+                        <svg width="1.5em" height="1.5em">
+                            <use xlink:href="assets/icons/linkedin.svg#icon"></use>
+                        </svg>LinkedIn</a>
+                </div>
             </div>
             <div class="home-main-right-container">
                 <h1>Featured Projects</h1>
@@ -39,15 +106,28 @@
                             <h3 class="home-project-card-title">Gameshub</h3>
                             <ul class="home-project-card-subtitle">
                                 <h5>Made with:</h5>
-                                <h5>Java</h5>
+                                <svg width="2em" height="2em">
+                                    <use xlink:href="assets/icons/java.svg#icon"></use>
+                                </svg>
                             </ul>
                             <p>A desktop javafx application that acts as a hub for classic games.
                                 The project allows users to create a profile and play a variety of games.
                             </p>
                             <div class="home-project-card-button-container">
                                 <!-- TODO: Icons for these are needed (SVG) -->
-                                <a class="home-project-card-button-readmore">View</a>
-                                <a class="home-project-card-button-github">Github</a>
+                                <a class="home-project-card-button-readmore">
+                                    <svg width="1em" height="1em">
+                                        <use xlink:href="assets/icons/read-more.svg#icon"></use>
+                                    </svg>
+                                    View
+                                </a>
+                                <a href="https://github.com/joewilko17/games-hub"
+                                    class="home-project-card-button-github">
+                                    <svg width="1em" height="1em">
+                                        <use xlink:href="assets/icons/github.svg#icon"></use>
+                                    </svg>
+                                    Github
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -56,17 +136,34 @@
                             <h3 class="home-project-card-title">CulinaryCraftsman</h3>
                             <ul class="home-project-card-subtitle">
                                 <h5>Made with:</h5>
-                                <h5>Python</h5>
-                                <h5>React.js</h5>
-                                <h5>mySQL</h5>
+                                <svg width="2em" height="2em">
+                                    <use xlink:href="assets/icons/python.svg#icon"></use>
+                                </svg>
+                                <svg width="2em" height="2em">
+                                    <use xlink:href="assets/icons/react.svg#icon"></use>
+                                </svg>
+                                <svg width="2em" height="2em">
+                                    <use xlink:href="assets/icons/mysql.svg#icon"></use>
+                                </svg>
                             </ul>
                             <p> My dissertation project at university that is a full stack web application for
-                                recommending recipes based upon user selection. 
+                                recommending recipes based upon user selection.
                             </p>
                             <div class="home-project-card-button-container">
                                 <!-- TODO: Icons for these are needed (SVG) -->
-                                <a class="home-project-card-button-readmore">View</a>
-                                <a class="home-project-card-button-github">Github</a>
+                                <a class="home-project-card-button-readmore">
+                                    <svg width="1em" height="1em">
+                                        <use xlink:href="assets/icons/read-more.svg#icon"></use>
+                                    </svg>
+                                    View
+                                </a>
+                                <a href="https://github.com/joewilko17/3rd-Year-Project"
+                                    class="home-project-card-button-github">
+                                    <svg width="1em" height="1em">
+                                        <use xlink:href="assets/icons/github.svg#icon"></use>
+                                    </svg>
+                                    Github
+                                </a>
                             </div>
                         </div>
                     </div>
