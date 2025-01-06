@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Joe Wilkinson | Software Engineer</title>
 </head>
@@ -20,102 +20,106 @@
             </nav>
         </header>
         <main class="home-main-wrapper">
-            <div class="home-main-left-container">
+            <section class="home-main-left-container">
                 <h1>About me</h1>
                 <div class="home-about-container">
-                    <div class="home-about-contents">
+                    <article class="home-about-contents">
                         <h3>I'm a Software Engineer passionate about developing full-stack applications. </h3>
                         <p> I'm currently working on developing a website solution for a client.</p>
                         <p> In my spare-time, I am focusing on learning the Spring framework for Java, looking to build
                             an e-commerce website.</p>
                         <h3>My Current Skillset</h3>
                         <ul class="home-about-skills-list">
-                            <div class="home-about-skills-icon">
+                            <li class="home-about-skills-icon">
                                 <svg width="3em" height="3em">
                                     <use xlink:href="assets/icons/java.svg#icon"></use>
                                 </svg>
                                 <span class="icon-text">Java</span>
-                            </div>
-                            <div class="home-about-skills-icon">
+                            </li>
+                            <li class="home-about-skills-icon">
                                 <svg width="3em" height="3em">
                                     <use xlink:href="assets/icons/python.svg#icon"></use>
                                 </svg>
                                 <span class="icon-text">Python</span>
-                            </div>
-                            <div class="home-about-skills-icon">
+                            </li>
+                            <li class="home-about-skills-icon">
                                 <svg width="3em" height="3em">
                                     <use xlink:href="assets/icons/csharp.svg#icon"></use>
                                 </svg>
                                 <span class="icon-text">C#</span>
-                            </div>
-                            <div class="home-about-skills-icon">
+                            </li>
+                            <li class="home-about-skills-icon">
                                 <svg width="3em" height="3em">
                                     <use xlink:href="assets/icons/react.svg#icon"></use>
                                 </svg>
                                 <span class="icon-text">React</span>
-                            </div>
-                            <div class="home-about-skills-icon">
+                            </li>
+                            <li class="home-about-skills-icon">
                                 <svg width="3em" height="3em">
                                     <use xlink:href="assets/icons/html5.svg#icon"></use>
                                 </svg>
                                 <span class="icon-text">HTML</span>
-                            </div>
-                            <div class="home-about-skills-icon">
+                            </li>
+                            <li class="home-about-skills-icon">
                                 <svg width="3em" height="3em">
                                     <use xlink:href="assets/icons/css3.svg#icon"></use>
                                 </svg>
                                 <span class="icon-text">CSS</span>
-                            </div>
-                            <div class="home-about-skills-icon">
+                            </li>
+                            <li class="home-about-skills-icon">
                                 <svg width="3em" height="3em">
                                     <use xlink:href="assets/icons/mysql.svg#icon"></use>
                                 </svg>
                                 <span class="icon-text">mySQL</span>
-                            </div>
-                            <div class="home-about-skills-icon">
+                            </li>
+                            <li class="home-about-skills-icon">
                                 <svg width="3em" height="3em">
                                     <use xlink:href="assets/icons/github.svg#icon"></use>
                                 </svg>
                                 <span class="icon-text">Github</span>
-                            </div>
+                            </li>
                         </ul>
+                    </article>
+                </div>
+            </section>
+            <section class="home-main-center-container">
+                <div class="home-main-center-contents">
+                    <img src="/assets/images/profile-image.jpg" class="home-profile-image" alt="joe-wilkinson-image">
+                    <h1>Joe Wilkinson</h1>
+                    <h2>Graduate Software Engineer</h2>
+                    <div class="home-main-center-button-container">
+                        <a href="https://github.com/joewilko17" class="home-main-center-button-github button">
+                            <svg width="1.5em" height="1.5em">
+                                <use xlink:href="assets/icons/github.svg#icon"></use>
+                            </svg>Github</a>
+                        <a href="https://www.linkedin.com/in/joe-wilkinson-9a587930b"
+                            class="home-main-center-button-linkedin button">
+                            <svg width="1.5em" height="1.5em">
+                                <use xlink:href="assets/icons/linkedin.svg#icon"></use>
+                            </svg>LinkedIn</a>
                     </div>
-
                 </div>
-            </div>
-            <div class="home-main-center-container">
-                <img src="/assets/images/profile-image.jpg" class="home-profile-image">
-                <h1>Joe Wilkinson</h1>
-                <h2>Graduate Software Engineer</h2>
-                <div class="home-main-center-button-container">
-                    <a href="https://github.com/joewilko17" class="home-main-center-button-github button">
-                        <svg width="1.5em" height="1.5em">
-                            <use xlink:href="assets/icons/github.svg#icon"></use>
-                        </svg>Github</a>
-                    <a href="https://www.linkedin.com/in/joe-wilkinson-9a587930b" class="home-main-center-button-linkedin button">
-                        <svg width="1.5em" height="1.5em">
-                            <use xlink:href="assets/icons/linkedin.svg#icon"></use>
-                        </svg>LinkedIn</a>
-                </div>
-            </div>
-            <div class="home-main-right-container">
+            </section>
+            <section id="last-element" class="home-main-right-container">
                 <h1>Featured Projects</h1>
                 <div class="home-projects-container">
-                    <div class="home-project-card-container">
+                    <article  class="home-project-card-container">
                         <div class="home-project-card-contents">
                             <h3 class="home-project-card-title">Gameshub</h3>
                             <ul class="home-project-card-subtitle">
-                                <h5>Made with:</h5>
-                                <svg width="2em" height="2em">
-                                    <use xlink:href="assets/icons/java.svg#icon"></use>
-                                </svg>
+                                <li>
+                                    <h5>Made with:</h5>
+                                </li>
+                                <li><svg width="2em" height="2em">
+                                        <use xlink:href="assets/icons/java.svg#icon"></use>
+                                    </svg>
+                                </li>
                             </ul>
                             <p>A desktop javafx application that acts as a hub for classic games.
                                 The project allows users to create a profile and play a variety of games.
                             </p>
                             <div class="home-project-card-button-container">
-                                <!-- TODO: Icons for these are needed (SVG) -->
-                                <a class="home-project-card-button-readmore">
+                                <a href="/project-pages/games-hub.html" class="home-project-card-button-readmore">
                                     <svg width="1em" height="1em">
                                         <use xlink:href="assets/icons/read-more.svg#icon"></use>
                                     </svg>
@@ -130,28 +134,36 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="home-project-card-container">
+                    </article>
+                    <article class="home-project-card-container">
                         <div class="home-project-card-contents">
                             <h3 class="home-project-card-title">CulinaryCraftsman</h3>
                             <ul class="home-project-card-subtitle">
-                                <h5>Made with:</h5>
-                                <svg width="2em" height="2em">
-                                    <use xlink:href="assets/icons/python.svg#icon"></use>
-                                </svg>
-                                <svg width="2em" height="2em">
-                                    <use xlink:href="assets/icons/react.svg#icon"></use>
-                                </svg>
-                                <svg width="2em" height="2em">
-                                    <use xlink:href="assets/icons/mysql.svg#icon"></use>
-                                </svg>
+                                <li>
+                                    <h5>Made with:</h5>
+                                </li>
+                                <li>
+                                    <svg width="2em" height="2em">
+                                        <use xlink:href="assets/icons/python.svg#icon"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="2em" height="2em">
+                                        <use xlink:href="assets/icons/react.svg#icon"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="2em" height="2em">
+                                        <use xlink:href="assets/icons/mysql.svg#icon"></use>
+                                    </svg>
+                                </li>
                             </ul>
                             <p> My dissertation project at university that is a full stack web application for
                                 recommending recipes based upon user selection.
                             </p>
                             <div class="home-project-card-button-container">
-                                <!-- TODO: Icons for these are needed (SVG) -->
-                                <a class="home-project-card-button-readmore">
+                                <a href="/project-pages/culinary-craftsman.html"
+                                    class="home-project-card-button-readmore">
                                     <svg width="1em" height="1em">
                                         <use xlink:href="assets/icons/read-more.svg#icon"></use>
                                     </svg>
@@ -166,9 +178,9 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
         </main>
     </div>
 </body>
