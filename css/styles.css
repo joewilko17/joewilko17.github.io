@@ -107,11 +107,20 @@ h5 {
 
 /* Home page styles */
 .home-main-wrapper {
-    margin-top: 100px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media screen and (min-height: 768px) {
+    .home-main-wrapper {
+        margin-top: 10vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
 
 /* Home Center Container */
