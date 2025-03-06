@@ -107,6 +107,7 @@ h5 {
 
 /* Home page styles */
 .home-main-wrapper {
+    margin-top: 100px;
     text-align: center;
     display: flex;
     align-items: center;
